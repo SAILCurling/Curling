@@ -1,28 +1,4 @@
-# Copyright (c) 2016, NVIDIA CORPORATION. All rights reserved.
-#
-# Redistribution and use in source and binary forms, with or without
-# modification, are permitted provided that the following conditions
-# are met:
-#  * Redistributions of source code must retain the above copyright
-#    notice, this list of conditions and the following disclaimer.
-#  * Redistributions in binary form must reproduce the above copyright
-#    notice, this list of conditions and the following disclaimer in the
-#    documentation and/or other materials provided with the distribution.
-#  * Neither the name of NVIDIA CORPORATION nor the names of its
-#    contributors may be used to endorse or promote products derived
-#    from this software without specific prior written permission.
-#
-# THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS ``AS IS'' AND ANY
-# EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
-# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
-# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT OWNER OR
-# CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
-# EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
-# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
-# PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
-# OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
-# (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
-# OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
 
 class Config:
 
@@ -81,24 +57,8 @@ class Config:
     # If 0, the latest checkpoint is loaded
     LOAD_EPISODE = 0 
 
-    #########################################################################
-    # Number of agents, predictors, trainers and other system settings
-    
-    # If the dynamic configuration is on, these are the initial values.
-    # Number of Agents
-    AGENTS = 32 
-    # Number of Predictors
-    PREDICTORS = 2
-    # Number of Trainers
-    TRAINERS = 2
-
     # Device
     DEVICE = 'gpu:1'
-
-    # Enable the dynamic adjustment (+ waiting time to start it)
-    DYNAMIC_SETTINGS = True
-    DYNAMIC_SETTINGS_STEP_WAIT = 20
-    DYNAMIC_SETTINGS_INITIAL_WAIT = 10
 
     #########################################################################
     # Algorithm parameters
