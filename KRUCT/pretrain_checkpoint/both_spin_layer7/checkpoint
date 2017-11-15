@@ -1,0 +1,2 @@
+model_checkpoint_path: "instance-300000"
+all_model_checkpoint_paths: "instance-300000"
